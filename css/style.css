@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px; /*Siempre debe ir*/
+    padding: 0px; /*Siempre debe ir*/
+    box-sizing: border-box; /*Siempre debe ir*/
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+/*Variables CSS para color y tipografía*/
+
+:root {
+    --color_primario: #007dc6;
+    --color_secundario: #ffc220;
+    --color_terciario: #000;
+    --color_cuaternario: #fff;
+    --color_footer: #004c91;
+    --type: 'Nunito Sans', sans-serif;
+    --type_second: 'Rubik', sans-serif;
+}
+
+/*Unidades em: la tipografía, el margin y el padding del documento.*/
+
+/*Menú de navegación*/
+img {
+    width: 100%; /*para que la imagen quede proporcional en todos los dispositivos*/
+    height: auto; 
+}
+
+header .logo_walmart {
+    width: 220px;  
+}
+
+header {
+    background-color: var(--color_primario);
+    padding: 0.75em 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: var(--color_terciario);
+    background-color: var(--color_secundario);
+    border-radius: 35px;
+    padding: 0.75em 2.18em;
+    margin: 0em 3.12em;
+    font-weight: 700;
+}
+
+.menu ul li a:hover {
+    background-color: var(--color_cuaternario);
+    box-shadow: 10px 2px 75px -23px rgba(255,255,255,0.95);
+    transition: 3s;
+}
+/*Final de menú de navegación*/
+
+/*Inicio secciones*/
+
+.marca {
+    display: flex;
+    align-items: center;
+    padding: 7.5em 10em;
+    gap: 80px;
+    background-color: var(--color_cuaternario);
+}
+
+.box_1 h2 {
+    color: var(--color_primario);
+    text-transform: uppercase;
+    font-family: var(--type_second);
+    font-size: 3.75em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
+ .box_1 p {
+    font-size: 1.12em;
+    line-height: 30px;
+}
+
+.imagen_spark {
+    width: 900px;
+}
+/*Otra sección*/
+/*Las etiquetas no llevan punto y las clases si deben llevar punto*/
+
+.nuestro-logotipo { /*Caja que abarca todo el contenido de esta sección*/
+    background-color: var(--color_secundario);
+    padding: 7.5em 10em;
+}
+
+.box_2 h2 {
+    color: var(--color_terciario);
+    text-transform: uppercase;
+    font-family: var(--type_second);
+    font-size: 3.75em;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+.box_2 p {
+    font-size: 1.12em;
+    line-height: 30px;
+}
+
+.logo { /*Caja que abarca los 3 logos*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.87em;
+    
+}
+
+.item1 { /*Caja individual*/
+    background-color: var(--color_cuaternario);
+border-radius: 20px;
+text-align: right;
+}
+
+.item2 { /*Caja individual*/
+    background-color: var(--color_primario);
+border-radius: 20px;
+text-align: right;
+}
+
+.item3 { /*Caja individual*/
+    background-color: var(--color_cuaternario);
+border-radius: 20px;
+text-align: right;
+}
+
+.item1 ul li {
+    display: inline;
+}
+.item2 ul li {
+    display: inline;
+}
+.item3 ul li {
+    display: inline;
+    
+}
+
+.item1 ul li a{
+    color: var(--color_footer);
+    padding-right: 1.25em;
+}
+.item2 ul li a{
+    color: var(--color_footer);
+    padding-right: 1.25em;
+}
+.item3 ul li a{
+    color: var(--color_footer);
+    padding-right: 1.25em;
+}
+/*fin secciones*/
+
+/*footer*/
+.pie_de_pag { /*Abarca toda la caja*/
+    background-color: var(--color_footer);
+    padding: 3.12em 1em;
+    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2em 10em;
+    border-bottom: 1px solid white;
+}
+
+.slogan h1 {
+    color: var(--color_cuaternario);
+    text-transform: uppercase;
+    font-family: var(--type_second);
+    font-size: 1.87em;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+.slogan ul li {
+    display: inline;
+}
+
+.slogan ul li a {
+    color: var(--color_cuaternario);
+    padding-right: 1.87em;
+}
+
+.lista ul li {
+    list-style: none;
+    color: var(--color_cuaternario);
+    line-height: 28px;
+}
+
+.lista ul li a {
+    color: var(--color_secundario);
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.lista ul li a:hover {
+    color: var(--color_cuaternario);
+}
+.flex-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descargar ul li {
+    display: inline;
+}
+
+.descargar ul li a {
+    color: var(--color_terciario);
+    background-color: var(--color_secundario);
+    border-radius: 35px;
+    padding: 0.75em 2.18em;
+    margin: 0em 10em;
+    font-weight: 700;
+}
+.descargar ul li a:hover {
+    background-color: var(--color_cuaternario);
+    box-shadow: 10px 2px 75px -23px rgba(255,255,255,0.95);
+    transition: 3s;
+}
+
+.logo_walmart2 {
+    width: 190px;  
+    margin: 1.25em 9.06em;
+}
+
+
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    /*Navegador*/
+    header {
+        height: 20vh; 
+        padding: 5.5em 3em;
+        
+    }
+
+    .menu ul li a {
+        margin: 0em 0.6em;
+        padding: 0.75em 0.9em;
+        
+    }
+    /*Secciones*/
+    .marca {
+        padding: 5.5em 3em;
+        gap: 30px;
+    }
+
+    .imagen_spark {
+        width: 1700px;
+    }
+    /*Otra seccción*/
+
+    .nuestro-logotipo {
+        padding: 5.5em 3em;
+    }
+
+    .logo { /*Caja que abarca los 3 logos*/
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 1.87em;
+        gap: 40px;
+        
+    }
+    /*footer*/
+
+    .flex-container {
+        justify-content: space-between;       
+        gap: 30px;
+        padding: 3em;
+    }
+    .descargar ul li a {
+        margin: 0em 3em;
+    }
+    .logo_walmart2 {
+        width: 190px; 
+        margin-left: 2em;
+    }
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+     /*Navegador*/
+
+    header {
+        padding: 2.3em;
+    }
+    header .logo_walmart {
+        width: 140px;  
+    }
+
+    .menu ul li a {
+        padding: 0.6em 0.7em;
+        margin: 0em 0.2em;
+        font-size: 0.7em;
+    }
+
+    /*Secciones*/
+    .marca {
+        flex-direction: column;
+        padding: 3.8em 2.3em;
+        gap: 20px;
+    }
+
+    .imagen_spark {
+        width: 400px;
+    }
+
+    /*Otra seccción*/
+    .nuestro-logotipo {
+        padding: 3.8em 2.3em;
+    }
+
+    .logo { /*Caja que abarca los 3 logos*/
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+    /*footer*/
+
+    .pie_de_pag {
+        padding: 1.8em 2.3em;
+    }
+    .flex-container {
+        gap: 5px;
+        padding: 2.3em;
+    }
+
+    .slogan h1 {
+        font-size: 1.2em;
+    }
+    .slogan ul li a {
+        color: var(--color_cuaternario);
+        padding-right: 1em;
+    }
+
+    .flex-container2 {
+        margin-top: 1em;
+    }
+
+    .descargar ul li a {
+        margin: 0em 1em;
+    }
+
+    .logo_walmart2 {
+        width: 180px; 
+        margin: 0em;
+    }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+   
+    /*Navegador*/
+    header {
+        height: 25vh;
+        padding: 2em;
+    }
+
+
+    .menu ul li {
+        margin: 0.5em;
+        display: flex;
+        justify-content: center;
+    }
+    .menu ul li a {
+        border-radius: 35px;
+        padding: 0.5em 0.7em;
+        margin: 0em;
+    }
+
+    /*Secciones*/
+    .marca {
+        flex-direction: column;
+        padding: 3.8em 2em;
+        gap: 10px;
+    }
+
+    .box_1 h2 {
+        font-size: 2.75em;
+    }
+
+    .imagen_spark {
+        width: 420px;
+    }
+
+    /*Otra seccción*/
+    .nuestro-logotipo {
+        padding: 3.8em 2em;
+    }
+
+    .box_2 h2 {
+        font-size: 2.75em;
+    }
+
+    .logo { /*Caja que abarca los 3 logos*/
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /*footer*/
+    .pie_de_pag {
+        padding: 1.8em 2em;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        padding: 1.8em 2em;
+        gap: 20px;
+    }
+
+    .flex-container2 {
+        margin-top: 0.5em;
+    }
+
+    .descargar ul li a {
+        margin: 0em;
+        padding: 0.5em 1.18em;
+        font-size: 1em;
+    }
+
+    .logo_walmart2 {
+        width: 140px; 
+        margin: 0em;
+    }
+}
+
+
+
+
+
+
